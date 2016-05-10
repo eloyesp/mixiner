@@ -9,7 +9,7 @@ module Enum
   def enum definitions
     definitions.each do |name, values|
       values.each_with_index do |value, index|
-        define_mixin_method self, 'Enum', "#{ value }!" do
+        mixin('Enum').define_method "#{ value }!" do
           @attributes[name] = index
         end
       end
@@ -50,3 +50,5 @@ post.archived!
 
 assert_equal post.status, :archived
 assert post.archived_at, 'Stores archived date'
+
+assert_equal Post::Enum.instance_methods(false), [:draft!, :public!, :archived!]
