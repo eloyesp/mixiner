@@ -1,5 +1,3 @@
-require_relative './lib/mixiner'
-
 # Lets rewrite enum using mixiner
 
 module Enum

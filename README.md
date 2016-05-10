@@ -18,4 +18,5 @@ is not possible if you define the method in the class itself).
 
 ## Usage
 
-This is a Work in Progress, so just check the [example.rb](/example.rb).
+This is a Work in Progress, so just check the [tests](/test) and the [inline
+documentation](/lib/mixiner.rb).
