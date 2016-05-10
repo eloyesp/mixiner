@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://rubygems.org/gems/mixiner'
 
   s.add_development_dependency 'cutest'
+  s.add_development_dependency 'yard'
 end
